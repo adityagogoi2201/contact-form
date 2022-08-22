@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url("/image/bg.jpg");
+    background-size: cover ;
+    width: 100vw;
+    height: 100vh;
+    background-position-x: -200px;
+}
+
+.buttons {
+    margin-top: 12px;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 21px;
+    color: rgb(255, 128, 1);
+    background-color: rgb(247, 239, 226);
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(167, 239, 73);
+}
+
+.btn-sm {
+    padding: 8px;
+    font-size: 13px;
+}
+
+.contactform {
+    padding: 0px 30px;
+    padding-top: 30px;
+}
+
+.contactform .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactform h1 {
+    color: rgb(255, 128, 1);
+    text-align: center;
+}
+.content{
+    margin-left: 150px;
+    line-height: 38px;
+}
+.contactform .row .content {
+    color: rgb(255, 128, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactform .row .content .title {
+    font-size: 30px;
+}
+
+.contactform form div {
+    padding: 7px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 30vw;
+    border-radius: 6px;
+    margin: 6px 0px;
+    padding: 3px;
+}
+
+.form-label {
+    color: rgb(255, 128, 1);
+}
+@media (max-width: 1025px) {
+    .education .box-container .box span{
+        padding: 0.5rem 0.5rem;
+    }
+}
+@media (max-width: 934px) {
+    body {
+        background-position-x: -800px;
+    }
+    .content{
+        margin: 30px 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        line-height: 20px;
+    }
+    .education .box-container .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 622px) {
+    .education .box-container{
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    .contactform .row .content{
+        margin-left: 62px;
+    }
+    .contactform .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 538px) {
+    .education h1 {
+        padding-left: 50px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactform h1{
+        padding-left: 37px;
+        margin-top: 22px;
+    }
+    .contactform .row .content{
+        margin-left: 42px;
+    }
+    .contactform .row .content h3{
+        font-size: 12px;
+    }
+    .portfolio .box-container .box{
+        height: 12rem;
+    }
+}
+@media (max-width: 450px) {
+    .portfolio .box-container .box{
+        height: 10rem;
+    }
+    .portfolio .box-container{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 300px) {
+    .hamburger .cross{
+        margin-left: 230px;
+    }
+    .portfolio .heading{
+        margin-top: 40px;
+    }
+    
+}
